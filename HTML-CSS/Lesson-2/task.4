@@ -3,6 +3,14 @@
  <head>
    <title>task.4</title>
    <meta charset="utf-8">
+   <style type="text/css">
+   	#text1 {
+   		margin-left: 20%;
+   	}
+   	#item1 { 
+   		font-weight: bold;
+   	}
+   </style>
  </head>
  <body>
 	<form action="URL">
@@ -30,22 +38,31 @@
  		</select>
  		</p>
  		<p>Skills and Technologies <br>
- 		<textarea rows="10" cols="20" name="mytext">
- 		Tech skills HTML
- 			CSS
- 			JavaScript
- 			git
- 		Soft Skills
- 			Time management
- 			Proactivity
- 			Teamwork
- 			Leadership
-		</textarea>
+		 <table border="1" width="160">
+		 	<tr>
+		 		<td>
+		 		    <div id="item1">Tech skills</div>
+				    <div id="text1">HTML<br>
+				    CSS<br>
+				    JavaScript<br>
+				    git</div>
+				    <div id="item1">Soft skills</div>
+				    <div id="text1">Time management<br>
+				    Proactivity<br>
+				    Teamwork<br>
+				    Leadership</div>
+		 		</td>
+		 	</tr>
+		 </table>
 		</p>
 		<p> Photo <br>
-		<input type="file" атрибуты> 
+		<input type="image" value="Choose file">
+		No file chosen
 		</p>
-
+		<p> Comments </p>
+		<textarea rows="5" cols="30" name="mytext">
+		</textarea><br><br>
+		<input type="button" value="Save">
 	 </form>
  </body> 
 </html>
